@@ -21,3 +21,7 @@ Usefull shortcuts:
 Ressurect - 
 	`prefix` + <kbd>CTRL</kbd> + <kbd>s</kbd> to save.
 	`prefix` + <kbd>CTRL</kbd> + <kbd>r</kbd> to reload saved session state.
+
+Pick a theme for tmux from **tmux-themepack** under [this url](https://github.com/jimeh/tmux-themepack)
+
+`sudo apt-get install fonts-powerline` or follow guide from themepack repo.
