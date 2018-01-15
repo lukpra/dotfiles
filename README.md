@@ -1,2 +1,23 @@
 # dotfiles
-My own dot file configuration for future faster environment restoration
+My own dot file configuration for future faster environment restoration.
+
+Repository is divided into different configs.
+TODO: Make scritps that copy in and out of those folders to home with possible backup.
+
+# Tmux
+Before executing tmux clone: **Tmux Plugin Manager** more info is in this [repo](https://github.com/tmux-plugins/tpm) or just execute this:
+```
+$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+If tmux is already running, reload it's config
+```
+$ tmux source ~/.tmux.conf
+```
+
+After replacing configs install missing plugins with `prefix` + <kbd>I</kbd> (capital i) and voil'a works.
+
+Usefull shortcuts:
+Ressurect - 
+	`prefix` + <kbd>CTRL</kbd> + <kbd>s</kbd> to save.
+	`prefix` + <kbd>CTRL</kbd> + <kbd>r</kbd> to reload saved session state.
