@@ -1,0 +1,23 @@
+###############################################
+# Common utils for easier system navigation   #
+###############################################
+# Searches recur. dir looking for given text
+function search_text_in_dir() {
+    egrep -r "$1" .
+}
+
+# Find process
+function p() {
+    ps aux | grep -i $1 | grep -v grep
+}
+
+# Kill all processes (parsed ps aux output)
+function ka() {
+    p $1 | awk '{print $2}'| xargs kill -9 
+}
+
+# Move swap into RAM (or remove unsed swap in effect) use only when system is on low lowad with free RAM > swap
+function clear_swap() {
+    sudo swapoff -a && sudo swapon -a
+}
+
